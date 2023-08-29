@@ -13,21 +13,20 @@ script = ExtResource("1_7t3lb")
 script = ExtResource("2_7qmr0")
 
 [node name="player1_unit1" parent="gameplay/units_player_0" instance=ExtResource("1_055n2")]
-attack_time = 0.4
+core = "speedy"
+left_arm = "speed_up"
+rigth_arm = "repair"
 
 [node name="player1_unit2" parent="gameplay/units_player_0" instance=ExtResource("1_055n2")]
-attack_time = 0.2
-damage = 1
+rigth_arm = "speed_up"
 
 [node name="units_player_1" type="Node" parent="gameplay"]
 script = ExtResource("2_7qmr0")
 player_number = 1
 
 [node name="player2_unit1" parent="gameplay/units_player_1" instance=ExtResource("1_055n2")]
-attack_time = 0.5
-damage = 3
+core = "tank"
+left_arm = "speed_up"
+rigth_arm = "speed_up"
 
 [node name="player2_unit2" parent="gameplay/units_player_1" instance=ExtResource("1_055n2")]
-hp = 15
-attack_time = 0.3
-damage = 1
