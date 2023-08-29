@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxd88xi6dwko0"]
+
+[ext_resource type="Script" path="res://scenes/gameplay/unit.gd" id="1_40iya"]
+
+[node name="unit" type="Node"]
+script = ExtResource("1_40iya")

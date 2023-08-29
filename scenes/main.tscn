@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp8e1xcmiujas"]
+
+[ext_resource type="Script" path="res://scenes/gameplay/gameplay.gd" id="1_7t3lb"]
+[ext_resource type="PackedScene" uid="uid://bxd88xi6dwko0" path="res://scenes/gameplay/unit.tscn" id="1_055n2"]
+[ext_resource type="Script" path="res://scenes/gameplay/units_player.gd" id="2_7qmr0"]
+
+[node name="main" type="Node2D"]
+
+[node name="gameplay" type="Node2D" parent="."]
+script = ExtResource("1_7t3lb")
+
+[node name="units_player_0" type="Node" parent="gameplay"]
+script = ExtResource("2_7qmr0")
+
+[node name="player1_unit1" parent="gameplay/units_player_0" instance=ExtResource("1_055n2")]
+attack_time = 0.4
+
+[node name="player1_unit2" parent="gameplay/units_player_0" instance=ExtResource("1_055n2")]
+attack_time = 0.2
+damage = 1
+
+[node name="units_player_1" type="Node" parent="gameplay"]
+script = ExtResource("2_7qmr0")
+player_number = 1
+
+[node name="player2_unit1" parent="gameplay/units_player_1" instance=ExtResource("1_055n2")]
+attack_time = 0.5
+damage = 3
+
+[node name="player2_unit2" parent="gameplay/units_player_1" instance=ExtResource("1_055n2")]
+hp = 15
+attack_time = 0.3
+damage = 1
